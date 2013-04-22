@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Devices</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Bootstrap -->
+<link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+<link href="{{ url_for('static', filename='bootstrap/css/bootstrap-responsive.css') }}" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="container">
+
+    <div class="container">
+        <div class="page-header">
+            <p><h2>Start here. </h2></p>
+            <p class="text-warning">Register for the service here!</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <form action="/register" method="POST">
+            <feildset>
+                    <div class="control-group">
+                        <label>Name</label>
+                        <div class="controls">
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <span class="help-block">Whats your name, little girl?</span>
+                        <label>Username</label>
+                        <div class="controls">
+                            <input type="text" name="username" id="username">
+                        </div>
+                        <span class="help-block">Pick a unique esername.</span>
+                        <label>Password</label>
+                        <div class="controls">
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <span class="help-block">Pick a good password.</span>
+
+                        <label>e-mail</label>
+                        <div class="controls">
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <span class="help-block">We need this for you to register.</span>
+       
+                        </div><!-- Control group div -->
+                
+                <button class="btn btn-large btn-primary" type="submit">Register</button>
+                    <a href = "/" class="btn btn-large" name="_cancel">Cancel</a>
+                        
+            </feildset>
+        </form>
+    </div>
+
+    
+    
+    
+</div>
+
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="{{ url_for('static', filename ='bootstrap/js/bootstrap.min.js') }}"></script>
+</body>
+</html>
