@@ -1,5 +1,5 @@
-Authlite - a simple, lightweight authentication framework
-=========================================================
+Authlite 
+=========
 
 Authlite is a simple authnentication framework built on Openshift and python by Paul Stasiuk, a student at Loyola University Chicago.
 
